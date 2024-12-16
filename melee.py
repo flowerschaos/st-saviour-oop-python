@@ -6,6 +6,7 @@ class Melee(Weapon):
         self.length = abs(length)
         self.battery = 100.0
 
+    # battery system
     def charge(self):
         if self.battery <= 0:
             print("Out of charge...")
@@ -17,5 +18,6 @@ class Melee(Weapon):
             self.damage = self.damage * 1.5
             self.battery -= 0.5
     
+    # recharging
     def recharge(self, duration: int):
         self.battery += duration * 0.5

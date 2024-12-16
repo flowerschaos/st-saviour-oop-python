@@ -5,5 +5,6 @@ class Weapon:
         self.year = year
         self.damage = damage
 
+    # defines the BASIC attack
     def attack(self):
         print(self.name+" does "+str(self.damage)+" points of damage!")

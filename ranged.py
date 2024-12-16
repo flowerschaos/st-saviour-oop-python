@@ -8,10 +8,12 @@ class Ranged(Weapon):
         self.auto = auto
         self.magazine = abs(ammo_count)
     
+    # firing system
     def fire(self):
         if self.ammo_count <= 0:
             print("Out of ammo! Reload!")
             return
+        # automatic firing
         if self.auto:
             super().attack()
             super().attack()
@@ -28,5 +30,6 @@ class Ranged(Weapon):
         super().attack()
         self.ammo_count -= 1
     
+    # reloading
     def reload(self):
         self.ammo_count = self.magazine
