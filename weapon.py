@@ -6,4 +6,4 @@ class Weapon:
         self.damage = damage
 
     def attack(self):
-        print(self.name+" does "+self.damage+" points of damage!")
+        print(self.name+" does "+str(self.damage)+" points of damage!")
